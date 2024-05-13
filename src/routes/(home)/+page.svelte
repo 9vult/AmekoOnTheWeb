@@ -1,6 +1,6 @@
 <main>
   <header class="head">
-    <img id="logo" src={logo} alt="Ameko Logo" />
+    <img id="logo" src="ameko-1000x.png" alt="Ameko Logo" />
     <h1>Ameko</h1>
   </header>
 
@@ -16,10 +16,6 @@
     &copy 2024 9volt and collaborators.
   </footer>
 </main>
-
-<script>
-  import logo from '$lib/assets/ameko-1000x.png';
-</script>
 
 <style>
   main {
