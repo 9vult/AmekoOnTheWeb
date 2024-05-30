@@ -1,9 +1,7 @@
 {#key data.pathname}
-  <main>
-    <div id="slot-content" in:fly={tranIn} out:fly={transOut}>
-      <slot />
-    </div>
-  </main>
+  <div id="slot-content" in:fly={tranIn} out:fly={transOut}>
+    <slot />
+  </div>
 {/key}
 
 <script>

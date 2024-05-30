@@ -20,7 +20,6 @@
 <style>
   main {
     display: grid;
-    height: calc(100vh - 1rem);
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr auto;
     padding: 0.5rem;
@@ -84,6 +83,7 @@
     }
     a {
       margin-bottom: 0.5em;
+      text-align: center;
     }
   }
 </style>

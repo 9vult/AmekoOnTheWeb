@@ -39,7 +39,6 @@
 <style>
   main {
     display: grid;
-    height: calc(100vh - 1rem);
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 10vh 1fr auto;
     padding: 0.5rem;
@@ -76,6 +75,8 @@
   .foot {
     grid-row: 3;
     font-size: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   a {
