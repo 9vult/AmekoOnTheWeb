@@ -6,9 +6,9 @@
 
   <section class="links">
     <nav>
-      <a href="/about">Documentation</a>
+      <a href="/docs">Documentation</a>
       <a href="/about">About</a>
-      <a href="/about">Development</a>
+      <a href="/dev">Development</a>
     </nav>
   </section>
 
@@ -47,6 +47,11 @@
     color: white;
   }
 
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
   .head {
     display: flex;
     flex-direction: column;
@@ -71,5 +76,14 @@
   #logo {
     width: 10em;
     margin-bottom: -3em;
+  }
+
+  @media screen and (max-width: 800px) {
+    nav {
+      flex-direction: column;
+    }
+    a {
+      margin-bottom: 0.5em;
+    }
   }
 </style>
