@@ -1,21 +1,21 @@
 {#key data.pathname}
-  <div id="slot-content" in:fly={tranIn} out:fly={transOut}>
+  <!-- <div id="slot-content" in:fly={tranIn} out:fly={transOut}> -->
     <slot />
-  </div>
+  <!-- </div> -->
 {/key}
 
 <script>
   import './+layout.css'
-  import { fly } from 'svelte/transition';
-  import { cubicIn, cubicOut } from 'svelte/easing';
+  // import { fly } from 'svelte/transition';
+  // import { cubicIn, cubicOut } from 'svelte/easing';
 
   export let data;
 
-  const duration = 300;
-  const delay = duration + 100;
-  const y = 10;
+  // const duration = 300;
+  // const delay = duration + 100;
+  // const y = 10;
 
-  const tranIn = {
+  /* const tranIn = {
     easing: cubicOut,
     y,
     delay
@@ -25,5 +25,5 @@
     easing: cubicIn,
     y: -y,
     duration
-  };
+  }; */
 </script>

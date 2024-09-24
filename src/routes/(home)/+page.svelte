@@ -9,6 +9,7 @@
       <a href="/docs">Documentation</a>
       <a href="/about">About</a>
       <a href="/dev">Development</a>
+      <a href="https://github.com/9vult/Ameko">Source</a>
     </nav>
   </section>
 
