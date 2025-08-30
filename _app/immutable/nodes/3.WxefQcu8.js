@@ -1,22 +1,4 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="../favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link href="../_app/immutable/assets/0.BtEMacFK.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/3.BMw3CFm8.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CcynVUM0.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.-hCdiyq9.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.CtbWrGNo.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.Cs-FtsBH.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.C79Nw7Xh.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.z9DaBYiU.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/3.WxefQcu8.js">
-	</head>
-	<body data-sveltekit-preload-data="hover" style="padding:0; margin:0;">
-		<div style="display: contents">   <main class="svelte-b86x8o" data-svelte-h="svelte-6y34pa"><header class="head svelte-b86x8o"><a href="/" class="svelte-b86x8o"><img id="logo" src="/ameko-1000x.png" alt="Ameko Logo" class="svelte-b86x8o"></a></header> <section class="content svelte-b86x8o"><h1>About Ameko</h1> <p class="svelte-b86x8o">Ameko is a cross-platform editor for Advanced Substation Alpha (ASS) subtitles.</p> <h2>Roadmap</h2> <h3>Milestone 1 - MVP</h3> <p class="svelte-b86x8o">The primary goal for Milestone 1 is to deliver a Minimum Viable
+import{s as l,n as t}from"../chunks/scheduler.CtbWrGNo.js";import{S as n,i as r,e as d,c as u,g as c,l as p,a as h,d as m}from"../chunks/index.C79Nw7Xh.js";function b(o){let e,s=`<header class="head svelte-b86x8o"><a href="/" class="svelte-b86x8o"><img id="logo" src="/ameko-1000x.png" alt="Ameko Logo" class="svelte-b86x8o"/></a></header> <section class="content svelte-b86x8o"><h1>About Ameko</h1> <p class="svelte-b86x8o">Ameko is a cross-platform editor for Advanced Substation Alpha (ASS) subtitles.</p> <h2>Roadmap</h2> <h3>Milestone 1 - MVP</h3> <p class="svelte-b86x8o">The primary goal for Milestone 1 is to deliver a Minimum Viable
       Product (MVP). For Ameko, this MVP will deliver a feature-rich
       subtitle editor with several key features to provide a robust
       foundation for future extensivility.</p> <ul><li><b>Core Subtitle Editing:</b>
@@ -50,31 +32,4 @@
       community contributions, and the natural progression of Ameko&#39;s development.</p> <h3>Translation Contributions</h3> <p class="svelte-b86x8o">If you are interested in localizing Ameko into your language (Thank you!),
       please see the <a href="https://crowdin.com/project/ameko" class="svelte-b86x8o">Crowdin project</a>.
       Note: Ameko is localized via the ResX format, which is quite limited,
-      such as lacking support for plurals.</p></section> <footer class="foot svelte-b86x8o">© 2025 9volt</footer> </main>  
-			
-			<script>
-				{
-					__sveltekit_ng7pj0 = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.CcynVUM0.js"),
-						import("../_app/immutable/entry/app.Cs-FtsBH.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 3],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+      such as lacking support for plurals.</p></section> <footer class="foot svelte-b86x8o">© 2025 9volt</footer>`;return{c(){e=d("main"),e.innerHTML=s,this.h()},l(i){e=u(i,"MAIN",{class:!0,"data-svelte-h":!0}),c(e)!=="svelte-6y34pa"&&(e.innerHTML=s),this.h()},h(){p(e,"class","svelte-b86x8o")},m(i,a){h(i,e,a)},p:t,i:t,o:t,d(i){i&&m(e)}}}class v extends n{constructor(e){super(),r(this,e,null,b,l,{})}}export{v as component};
