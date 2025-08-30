@@ -9,30 +9,83 @@
     </p>
 
     <h2>Roadmap</h2>
-    <h3>Milestone 1 - MVP (Complete!)</h3>
+    <h3>Milestone 1 - MVP</h3>
 
     <p>
-      The goal for Milestone 1 is to have a Minimal Viable Product, or MVP. For Ameko, the MVP is delivering a feature-rich <i>subtitle editor</i>.
-      While Ameko intends to be an editing <i>suite</i> in its final form, the MVP is simply an editor. Thus, the MVP is missing many critical features
-      most would consider invaluable to the subtitling workflow, such as video and audio support, graphical tools, or even displaying a preview of
-      the subtitles you're writing.
+      The primary goal for Milestone 1 is to deliver a Minimum Viable
+      Product (MVP). For Ameko, this MVP will deliver a feature-rich
+      subtitle editor with several key features to provide a robust
+      foundation for future extensivility.
     </p>
+    <ul>
+      <li>
+        <b>Core Subtitle Editing:</b>
+        This forms the heart of the MVP, providing essential tools for
+        creating, manipulating, and styling subtitles.
+      </li>
+      <li>
+        <b>Integrated Video Support:</b>
+        I've chosen to include support in the MVP as it's an indespensable
+        part of the subtitling workflow. Rendering is handled via a plugin-
+        based system, ensuring flexibility and independence from any single
+        backend. The initial provider will be
+        <a href="https://github.com/FFMS/ffms2">FFMS2</a> and
+        <a href="https://github.com/libass/libass/">libass</a> will be the
+        first subtitle renderer. Video rendering is handled by OpenGL. The
+        first audio renderer is OpenAL Soft.
+      </li>
+      <li>
+        <b>Tabs and Solutions:</b>
+        Ameko will feature tabs, allowing users to easily switch between
+        multiple open subtitle files. Alongside this, Ameko is introducing
+        <i>Solution Files</i>. Solutions allow logical grouping and organizaiton
+        of subtitle files independent of the physical filesystem structure.
+        Furthermore, Solutions provide a centralized place for common project
+        configuration, styles, colors, and more, offering a significant improvement
+        for teams using automated build processes and version control-based
+        workflows.
+      </li>
+      <li>
+        <b>C# Scripting Support:</b>
+       Recognizing that many existing workflows rely heavily on scripting for
+       automation and advanced tasks, the MVP will include robust support for C#
+       scripts and libraries. While existing Lua/Moonscript scripts are not supported
+       by Ameko, the C# scripting platform is highly versitile and supports
+       development of both simple and complex tasks.
+      </li>
+    </ul>
+
+    <h3>Future Milestones</h3>
     <p>
-      However, the intent of Milestone 1 as a MVP is to serve as a proof of concept for the viability of Ameko, Holo, and AssCS, and as such, the ability to
-      edit subtitles will serve the role of the "minimum product." Ideally, the MVP should include all major editing features that don't require
-      video or audio as part of their workflow.
+      Ameko is envisioned as a comprehensive editing suite, and while the exact
+      path is still unclear, future development will focus on significantly expanding
+      its capabilities. Potential upcoming milestones include:
+    </p>
+    <ul>
+      <li>
+        <b>Audio Integration</b>:
+        Implementing audio waveform and spectrum visualizations, related audio tooling.
+      </li>
+      <li>
+        <b>Graphical Tools</b>:
+        Tools for visually manipulating subtitles on the video.
+      </li>
+    </ul>
+    <p>
+      These are initial ideas—milestones will be added or removed based on user feedback,
+      community contributions, and the natural progression of Ameko's development.
     </p>
 
-    <h3>Milestone 2 - Video</h3>
+    <h3>Translation Contributions</h3>
     <p>
-      Video is clearly the second most important feature for a subtitle editor (behind only subtitle editing features).
-      Video loading will be provided via Plugins so Holo/Ameko is not dependent on any one source. The first video provider will be <a href="https://github.com/FFMS/ffms2">FFMS2</a>.
-      The full specifics of the video milestone are still in the air; it is currently unclear if features like subtitle rendering will
-      be included within or pushed to a different milestone. The current goal and focus of this milestone is to have a working video player.
+      If you are interested in localizing Ameko into your language (Thank you!),
+      please see the <a href="https://crowdin.com/project/ameko">Crowdin project</a>.
+      Note: Ameko is localized via the ResX format, which is quite limited,
+      such as lacking support for plurals.
     </p>
   </section>
   <footer class="foot">
-    &copy 2024 9volt and collaborators.
+    &copy 2025 9volt
   </footer>
 </main>
 

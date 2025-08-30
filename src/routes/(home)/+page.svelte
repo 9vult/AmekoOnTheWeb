@@ -14,7 +14,7 @@
   </section>
 
   <footer class="foot">
-    &copy 2024 9volt and collaborators.
+    &copy 2025 9volt
   </footer>
 </main>
 
