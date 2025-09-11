@@ -6,55 +6,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<link href="../_app/immutable/assets/0.BtEMacFK.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/3.BMw3CFm8.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CcynVUM0.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.-hCdiyq9.js">
+		<link href="../_app/immutable/assets/3.BfKrdCLD.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.CcOcy4ZG.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.CvE54mJH.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.CtbWrGNo.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.Cs-FtsBH.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BheN8syN.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.C79Nw7Xh.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/0.z9DaBYiU.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/3.WxefQcu8.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/3.y14RKNKT.js">
 	</head>
 	<body data-sveltekit-preload-data="hover" style="padding:0; margin:0;">
-		<div style="display: contents">   <main class="svelte-b86x8o" data-svelte-h="svelte-6y34pa"><header class="head svelte-b86x8o"><a href="/" class="svelte-b86x8o"><img id="logo" src="/ameko-1000x.png" alt="Ameko Logo" class="svelte-b86x8o"></a></header> <section class="content svelte-b86x8o"><h1>About Ameko</h1> <p class="svelte-b86x8o">Ameko is a cross-platform editor for Advanced Substation Alpha (ASS) subtitles.</p> <h2>Roadmap</h2> <h3>Milestone 1 - MVP</h3> <p class="svelte-b86x8o">The primary goal for Milestone 1 is to deliver a Minimum Viable
-      Product (MVP). For Ameko, this MVP will deliver a feature-rich
-      subtitle editor with several key features to provide a robust
-      foundation for future extensivility.</p> <ul><li><b>Core Subtitle Editing:</b>
-        This forms the heart of the MVP, providing essential tools for
-        creating, manipulating, and styling subtitles.</li> <li><b>Integrated Video Support:</b>
-        I&#39;ve chosen to include support in the MVP as it&#39;s an indespensable
-        part of the subtitling workflow. Rendering is handled via a plugin-
-        based system, ensuring flexibility and independence from any single
-        backend. The initial provider will be
-        <a href="https://github.com/FFMS/ffms2" class="svelte-b86x8o">FFMS2</a> and
-        <a href="https://github.com/libass/libass/" class="svelte-b86x8o">libass</a> will be the
-        first subtitle renderer. Video rendering is handled by OpenGL. The
-        first audio renderer is OpenAL Soft.</li> <li><b>Tabs and Solutions:</b>
-        Ameko will feature tabs, allowing users to easily switch between
-        multiple open subtitle files. Alongside this, Ameko is introducing
-        <i>Solution Files</i>. Solutions allow logical grouping and organizaiton
-        of subtitle files independent of the physical filesystem structure.
-        Furthermore, Solutions provide a centralized place for common project
-        configuration, styles, colors, and more, offering a significant improvement
-        for teams using automated build processes and version control-based
-        workflows.</li> <li><b>C# Scripting Support:</b>
-       Recognizing that many existing workflows rely heavily on scripting for
-       automation and advanced tasks, the MVP will include robust support for C#
-       scripts and libraries. While existing Lua/Moonscript scripts are not supported
-       by Ameko, the C# scripting platform is highly versitile and supports
-       development of both simple and complex tasks.</li></ul> <h3>Future Milestones</h3> <p class="svelte-b86x8o">Ameko is envisioned as a comprehensive editing suite, and while the exact
-      path is still unclear, future development will focus on significantly expanding
-      its capabilities. Potential upcoming milestones include:</p> <ul><li><b>Audio Integration</b>:
-        Implementing audio waveform and spectrum visualizations, related audio tooling.</li> <li><b>Graphical Tools</b>:
-        Tools for visually manipulating subtitles on the video.</li></ul> <p class="svelte-b86x8o">These are initial ideas—milestones will be added or removed based on user feedback,
-      community contributions, and the natural progression of Ameko&#39;s development.</p> <h3>Translation Contributions</h3> <p class="svelte-b86x8o">If you are interested in localizing Ameko into your language (Thank you!),
-      please see the <a href="https://crowdin.com/project/ameko" class="svelte-b86x8o">Crowdin project</a>.
-      Note: Ameko is localized via the ResX format, which is quite limited,
-      such as lacking support for plurals.</p></section> <footer class="foot svelte-b86x8o">© 2025 9volt</footer> </main>  
+		<div style="display: contents">   <main class="svelte-piboub" data-svelte-h="svelte-1erlych"><header class="head svelte-piboub"><a href="/" class="svelte-piboub"><img id="logo" src="/ameko-1000x.png" alt="Ameko Logo" class="svelte-piboub"></a></header> <section class="content svelte-piboub"><h1>About Ameko</h1> <p class="svelte-piboub">Ameko is a cross-platform editor for Advanced Substation Alpha (ASS)
+      subtitles.</p> <h2>Roadmap</h2> <h3>Milestone 1 - MVP</h3> <p class="svelte-piboub">The primary goal for Milestone 1 is to deliver a Minimum Viable Product
+      (MVP). This includes, but is not limited to:</p> <ul><li><b>Core Subtitle Editing:</b>
+        Creating, manipulating, and styling subtitles</li> <li><b>Audio and Video Playback:</b>
+        Initially, a/v will be provided by
+        <a href="https://github.com/FFMS/ffms2" class="svelte-piboub">FFMS</a>
+        and subtitles by <a href="https://github.com/libass/libass/" class="svelte-piboub">libass</a>.
+        This content will be rendered to the user using OpenGL and OpenALSoft.
+        However, a plugin architecture will be used to allow for these options
+        to be extended in the future.</li> <li><b>Tabs and Projects:</b>
+        Ameko features tabs, allowing users to easily switch between multiple open
+        subtitle files. Additionally, Ameko is introducing <i>Project Files</i>.
+        Projects allow for logical grouping and organization of subtitle files
+        independent of the physical filesystem structure, and provide a
+        centralized place for common project configuration (like CPS warn
+        levels, spellcheck language, etc.), colors, styles, and more.</li> <li><b>Integrated Git support:</b>
+        Basic Git features, like committing, pulling, pushing, and blaming will be
+        available out of the box.</li> <li><b>Scripting:</b>
+        Ameko includes robust support for C# scripts and libraries. A scripting playground
+        and support for simple JavaScript scriptlets will also be included.</li></ul> <h3>Future Milestones</h3> <p class="svelte-piboub">Ameko is envisioned as a comprehensive editing suite, and while the exact
+      path is still unclear, future development will focus on significantly
+      expanding its capabilities. Potential upcoming milestones include:</p> <ul><li><b>Audio Integration:</b>
+        Implementing audio waveform/spectrum visualizations and related audio tooling.</li> <li><b>Graphical Tools:</b>
+        Tools for visually manipulating subtitles on the video</li></ul></section> <footer class="foot svelte-piboub">© 2025 9volt.</footer> </main>  
 			
 			<script>
 				{
-					__sveltekit_ng7pj0 = {
+					__sveltekit_107ti6y = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
@@ -63,8 +52,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.CcynVUM0.js"),
-						import("../_app/immutable/entry/app.Cs-FtsBH.js")
+						import("../_app/immutable/entry/start.CcOcy4ZG.js"),
+						import("../_app/immutable/entry/app.BheN8syN.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],

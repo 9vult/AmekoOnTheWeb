@@ -1,22 +1,4 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="../favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link href="../_app/immutable/assets/0.BtEMacFK.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/3.BfKrdCLD.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CcOcy4ZG.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.CvE54mJH.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.CtbWrGNo.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.BheN8syN.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.C79Nw7Xh.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.z9DaBYiU.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.CGODAH_X.js">
-	</head>
-	<body data-sveltekit-preload-data="hover" style="padding:0; margin:0;">
-		<div style="display: contents">   <main class="svelte-piboub" data-svelte-h="svelte-uy50bz"><header class="head svelte-piboub"><a href="/" class="svelte-piboub"><img id="logo" src="/ameko-1000x.png" alt="Ameko Logo" class="svelte-piboub"></a></header> <section class="content svelte-piboub"><h1>Developing Ameko</h1> <p class="svelte-piboub">This section will cover developing for the Ameko application itself.</p> <h2>Building</h2> <p class="svelte-piboub">I would strongly recommend using JetBrains Rider or Visual Studio for
+import{s as a,n as t}from"../chunks/scheduler.CtbWrGNo.js";import{S as n,i as r,e as u,c,g as d,l as h,a as p,d as b}from"../chunks/index.C79Nw7Xh.js";function m(l){let e,o=`<header class="head svelte-piboub"><a href="/" class="svelte-piboub"><img id="logo" src="/ameko-1000x.png" alt="Ameko Logo" class="svelte-piboub"/></a></header> <section class="content svelte-piboub"><h1>Developing Ameko</h1> <p class="svelte-piboub">This section will cover developing for the Ameko application itself.</p> <h2>Building</h2> <p class="svelte-piboub">I would strongly recommend using JetBrains Rider or Visual Studio for
       development, especially if you plan on contributing to the GUI.</p> <h3>C#</h3> <ul><li>Make sure you have the .net SDK installed.</li> <li>Run <code>dotnet restore</code> to collect the required NuGet packages.</li> <li>To build, either click the Build button in your IDE, or run <code>dotnet build</code>.</li> <li>To test, either click the Run Tests button in your IDE, or run <code>dotnet test</code>.</li> <li>To build a release binary, use <code>dotnet publish</code>.</li> <li>The final output for debugging and running is the <code>Ameko</code> project.</li></ul> <h3>Zig</h3> <ul><li>Make sure you have Zig installed.</li> <li>You may need to build FFMS2 and libass yourself.</li> <li>To build, run <code>zig build</code>. To run the main method, use
         <code>zig build run</code>.</li> <li>To test, run <code>zig test</code>.</li> <li>To build a release binary, use <code>zig build --release=safe</code>.</li></ul> <h2>Project Components</h2> <p class="svelte-piboub">The Ameko project is currently comprised of four components working in
       tandem:</p> <ul><li><b>AssCS:</b>
@@ -44,31 +26,4 @@
         projects.</li> <li>Tests are optional, but highly appreciated, for Ameko&#39;s ViewModels and
         for Mizuki.</li></ul> <h3>Localization</h3> <p class="svelte-piboub">If you are interested in localizing Ameko into your language (Thank you!),
       please see the <a href="https://crowdin.com/project/ameko" class="svelte-piboub">Crowdin project</a>. Note: Ameko is localized via the ResX format, which is quite limited,
-      such as lacking support for plurals.</p></section> <footer class="foot svelte-piboub">© 2024 9volt.</footer> </main>  
-			
-			<script>
-				{
-					__sveltekit_107ti6y = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.CcOcy4ZG.js"),
-						import("../_app/immutable/entry/app.BheN8syN.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 4],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+      such as lacking support for plurals.</p></section> <footer class="foot svelte-piboub">© 2024 9volt.</footer>`;return{c(){e=u("main"),e.innerHTML=o,this.h()},l(i){e=c(i,"MAIN",{class:!0,"data-svelte-h":!0}),d(e)!=="svelte-uy50bz"&&(e.innerHTML=o),this.h()},h(){h(e,"class","svelte-piboub")},m(i,s){p(i,e,s)},p:t,i:t,o:t,d(i){i&&b(e)}}}class y extends n{constructor(e){super(),r(this,e,null,m,a,{})}}export{y as component};
