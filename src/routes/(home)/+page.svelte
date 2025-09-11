@@ -13,9 +13,7 @@
     </nav>
   </section>
 
-  <footer class="foot">
-    &copy 2024 9volt and collaborators.
-  </footer>
+  <footer class="foot">&copy 2025 9volt.</footer>
 </main>
 
 <style>
@@ -31,7 +29,7 @@
     color: white;
     text-decoration: none;
     text-transform: lowercase;
-    
+
     padding: 0.25em 0.5em;
     border: 2pt solid white;
     border-radius: 1em;
@@ -40,7 +38,7 @@
   }
 
   a:hover {
-    background-color: rgba(255, 255, 255, 0.2)
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   a:visited {

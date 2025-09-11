@@ -5,35 +5,73 @@
   <section class="content">
     <h1>About Ameko</h1>
     <p>
-      Ameko is a cross-platform editor for Advanced Substation Alpha (ASS) subtitles.
+      Ameko is a cross-platform editor for Advanced Substation Alpha (ASS)
+      subtitles.
     </p>
 
     <h2>Roadmap</h2>
-    <h3>Milestone 1 - MVP (Complete!)</h3>
+    <h3>Milestone 1 - MVP</h3>
 
     <p>
-      The goal for Milestone 1 is to have a Minimal Viable Product, or MVP. For Ameko, the MVP is delivering a feature-rich <i>subtitle editor</i>.
-      While Ameko intends to be an editing <i>suite</i> in its final form, the MVP is simply an editor. Thus, the MVP is missing many critical features
-      most would consider invaluable to the subtitling workflow, such as video and audio support, graphical tools, or even displaying a preview of
-      the subtitles you're writing.
-    </p>
-    <p>
-      However, the intent of Milestone 1 as a MVP is to serve as a proof of concept for the viability of Ameko, Holo, and AssCS, and as such, the ability to
-      edit subtitles will serve the role of the "minimum product." Ideally, the MVP should include all major editing features that don't require
-      video or audio as part of their workflow.
+      The primary goal for Milestone 1 is to deliver a Minimum Viable Product
+      (MVP). This includes, but is not limited to:
     </p>
 
-    <h3>Milestone 2 - Video</h3>
+    <ul>
+      <li>
+        <b>Core Subtitle Editing:</b>
+        Creating, manipulating, and styling subtitles
+      </li>
+      <li>
+        <b>Audio and Video Playback:</b>
+        Initially, a/v will be provided by
+        <a href="https://github.com/FFMS/ffms2">FFMS</a>
+        and subtitles by <a href="https://github.com/libass/libass/">libass</a>.
+        This content will be rendered to the user using OpenGL and OpenALSoft.
+        However, a plugin architecture will be used to allow for these options
+        to be extended in the future.
+      </li>
+      <li>
+        <b>Tabs and Projects:</b>
+        Ameko features tabs, allowing users to easily switch between multiple open
+        subtitle files. Additionally, Ameko is introducing <i>Project Files</i>.
+        Projects allow for logical grouping and organization of subtitle files
+        independent of the physical filesystem structure, and provide a
+        centralized place for common project configuration (like CPS warn
+        levels, spellcheck language, etc.), colors, styles, and more.
+      </li>
+      <li>
+        <b>Integrated Git support:</b>
+        Basic Git features, like committing, pulling, pushing, and blaming will be
+        available out of the box.
+      </li>
+      <li>
+        <b>Scripting:</b>
+        Ameko includes robust support for C# scripts and libraries. A scripting playground
+        and support for simple JavaScript scriptlets will also be included.
+      </li>
+    </ul>
+
+    <h3>Future Milestones</h3>
+
     <p>
-      Video is clearly the second most important feature for a subtitle editor (behind only subtitle editing features).
-      Video loading will be provided via Plugins so Holo/Ameko is not dependent on any one source. The first video provider will be <a href="https://github.com/FFMS/ffms2">FFMS2</a>.
-      The full specifics of the video milestone are still in the air; it is currently unclear if features like subtitle rendering will
-      be included within or pushed to a different milestone. The current goal and focus of this milestone is to have a working video player.
+      Ameko is envisioned as a comprehensive editing suite, and while the exact
+      path is still unclear, future development will focus on significantly
+      expanding its capabilities. Potential upcoming milestones include:
     </p>
+
+    <ul>
+      <li>
+        <b>Audio Integration:</b>
+        Implementing audio waveform/spectrum visualizations and related audio tooling.
+      </li>
+      <li>
+        <b>Graphical Tools:</b>
+        Tools for visually manipulating subtitles on the video
+      </li>
+    </ul>
   </section>
-  <footer class="foot">
-    &copy 2024 9volt and collaborators.
-  </footer>
+  <footer class="foot">&copy 2025 9volt.</footer>
 </main>
 
 <style>
@@ -48,6 +86,9 @@
   .content {
     grid-row: 2;
     grid-column: 2;
+    background-color: #00000040;
+    padding: 1.5em;
+    border-radius: 1em;
   }
 
   .content p {
@@ -60,7 +101,7 @@
     align-items: center;
     justify-content: center;
     grid-row: 1;
-    grid-column: 2;    
+    grid-column: 2;
   }
 
   .head a img {
@@ -71,7 +112,7 @@
   .head a img:hover {
     rotate: 180deg;
   }
-  
+
   .foot {
     grid-row: 3;
     font-size: 1rem;
